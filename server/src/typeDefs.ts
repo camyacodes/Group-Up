@@ -33,6 +33,7 @@ export const typeDefs = `#graphql
 
     type Mutation {
         addUser(name: String!, email: String!, password: String!): User
-        addStudyGroup(creatorId: ID!, subject: String!, time: String!, address: String!, particiapants: [UserInput]): StudyGroup
+        addStudyGroup(creatorId: ID!, subject: String!, time: String!, address: String!, participants: [UserInput]): StudyGroup
+        addParticipant(studyGroupId: ID!, participantId: ID!): StudyGroup
     }
 `;
