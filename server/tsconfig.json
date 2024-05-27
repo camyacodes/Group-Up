@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "strict": true,
+    "rootDirs": ["src"],
+    "outDir": "dist",
+    "lib": ["es2020"],
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "outDir": "./dist"
-  },
-  "include": ["./**/*.ts"],
-  "exclude": ["node_modules"]
+    "types": ["node"]
+  }
 }
